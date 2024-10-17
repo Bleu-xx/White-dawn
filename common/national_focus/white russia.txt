@@ -237,6 +237,8 @@ focus_tree = {
 ##      ##   ##  ## ## ##  ## ## ## ##   ## ## # ##  ###   #####    ###   
 ##      ##   ##  ##    ##  ##    ## ##   ## ##  ###  ###       ##   ###   
  #####   #####   ##    ##  ##    ##  #####  ##   ## #####  #####    ###   
+ 
+ 
        
 
 	focus = {
@@ -245,7 +247,7 @@ focus_tree = {
 		#prerequisite = { focus = RUS_the_russian_empire }
 		mutually_exclusive = { focus = RUS_bring_back_the_tsar }
 		#mutually_exclusive = { focus = RUS_peter_iii }
-		x = 7
+		x = -20
 		y = 4
 		#relative_position_id =
 		cost = 10
@@ -258,6 +260,439 @@ focus_tree = {
 			add_ideas = RUS_russian_spirit
 		}
 	}	   
+
+#### ##    ## ########  ##     ##  ######  ######## ########  ####    ###    ##       
+ ##  ###   ## ##     ## ##     ## ##    ##    ##    ##     ##  ##    ## ##   ##       
+ ##  ####  ## ##     ## ##     ## ##          ##    ##     ##  ##   ##   ##  ##       
+ ##  ## ## ## ##     ## ##     ##  ######     ##    ########   ##  ##     ## ##       
+ ##  ##  #### ##     ## ##     ##       ##    ##    ##   ##    ##  ######### ##       
+ ##  ##   ### ##     ## ##     ## ##    ##    ##    ##    ##   ##  ##     ## ##       
+#### ##    ## ########   #######   ######     ##    ##     ## #### ##     ## ######## 
+                                                                                      
+	focus = {
+		id = RUS_reconstruction
+		icon = GFX_values_of_october
+		#prerequisite = { focus = RUS_the_russian_empire }
+		#mutually_exclusive = { focus = RUS_bring_back_the_tsar }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 20
+		y = 0
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}
+
+	focus = {
+		id = RUS_minister_of_reconstruction
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_reconstruction }
+		#mutually_exclusive = { focus = RUS_bring_back_the_tsar }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 20
+		y = 1
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}
+
+	focus = {
+		id = RUS_civilian_infrastructure
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_reconstruction }
+		#mutually_exclusive = { focus = RUS_bring_back_the_tsar }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 22
+		y = 1
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}
+
+	focus = {
+		id = RUS_military_infrastructure
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_reconstruction }
+		#mutually_exclusive = { focus = RUS_bring_back_the_tsar }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 18
+		y = 1
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}
+
+	focus = {
+		id = RUS_forts
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_military_infrastructure }
+		#mutually_exclusive = { focus = RUS_bring_back_the_tsar }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 18
+		y = 2
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_military_factorys
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_military_infrastructure }
+		mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 16
+		y = 2
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}
+	
+	focus = {
+		id = RUS_ukrainian_forts
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 18
+		y = 3
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}
+	
+	focus = {
+		id = RUS_don_caucasian_forts
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_ukrainian_forts }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 18
+		y = 4
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_finnish_forts
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_ukrainian_forts }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 20
+		y = 4
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_fort_construction_company
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_finnish_forts }
+		prerequisite = { focus = RUS_don_caucasian_forts }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 19
+		y = 5
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_more_infrastructure
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_military_factorys }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 16
+		y = 3
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_railroads
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_military_factorys }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 14
+		y = 3
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_supply_industry
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_more_infrastructure }
+		prerequisite = { focus = RUS_railroads }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 15
+		y = 5
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_gifts_to_smaller_countries
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_minister_of_reconstruction }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 20
+		y = 2
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_urban_development_gifts
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_gifts_to_smaller_countries }
+		#mutually_exclusive = { focus = RUS_forts }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 20
+		y = 3
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_urban_development_infrastructure
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_civilian_infrastructure }
+		mutually_exclusive = { focus = RUS_rural_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 22
+		y = 2
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}
+	
+	focus = {
+		id = RUS_rural_development_infrastructure
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_civilian_infrastructure }
+		mutually_exclusive = { focus = RUS_urban_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 24
+		y = 2
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_urban_factorys
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_urban_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_urban_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 22
+		y = 3
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_agriculture_upgrade
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_rural_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_urban_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 24
+		y = 3
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}	
+	
+	focus = {
+		id = RUS_civilian_upgrade
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_urban_factorys focus = RUS_agriculture_upgrade }
+		#mutually_exclusive = { focus = RUS_urban_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 23
+		y = 5
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}
+	
+	focus = {
+		id = RUS_extra_research_slot
+		icon = GFX_values_of_october
+		prerequisite = { focus = RUS_civilian_upgrade }
+		prerequisite = { focus = RUS_fort_construction_company focus = RUS_supply_industry }
+		#mutually_exclusive = { focus = RUS_urban_development_infrastructure }
+		#mutually_exclusive = { focus = RUS_peter_iii }
+		x = 19
+		y = 7
+		#relative_position_id =
+		cost = 10
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = RUS_russian_spirit
+		}
+	}
+
+
 
 
 }

@@ -14,7 +14,9 @@ state={
 			infrastructure = 3 #was: 5
 			air_base = 3
 		}
-		add_core_of = SUK
+		add_core_of = SOV
+		add_core_of = SUK		
+		add_core_of = RUS
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 1
